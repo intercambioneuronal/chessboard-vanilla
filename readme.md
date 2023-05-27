@@ -4,3 +4,4 @@ A simple chessboard playable, support 1P vs 2P only. No images used for pieces, 
 - Javascript
 - CSS
 - No frameworks
+![Preview Image](preview.png)
