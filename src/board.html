@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>Chessboard using CSS, HTML and JS Vanilla</title>
+<link rel="stylesheet" href="board.css" type="text/css">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script src="pieces.js"></script>
+<script src="moves.js"></script>
+<script src="board.js"></script>
+<script src="calculations.js"></script>
+</head>
+<body>
+<div id="principal">
+<div id="chessboard"></div>
+<div id="opciones">    
+    <label class="switch">
+        <input type="checkbox" id="colorChanger" checked>
+        <span class="slider round"></span>
+    </label>
+    <button id="btnReset">Nueva partida</button>
+    <button id="btnWide">wide/normal</button>
+    <button id="btnAnima">XD</button>
+    <div class="flex">
+    <input type="color" value="#B68864" class="color-board" name="color-default"/>
+    <input type="color" value="#4a1ae8" class="color-board" name="color-brown"/>
+    </div>
+
+</div>
+</div>
+</body>
+</html>

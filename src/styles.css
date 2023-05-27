@@ -1,0 +1,192 @@
+button{
+    border: 1px solid rgba(0,0,0,.5);
+    box-sizing: border-box;
+    background-color: #015998;
+    background-image: linear-gradient(to bottom,rgba(255,255,255,.2),rgba(255,255,255,0));
+    font-family: opensans-regular,Arial,Helvetica,sans-serif;
+    color: #e7e7e7;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    height: 40px;
+    box-shadow: inset 0 1px 1px rgba(255,255,255,.5), 0 1px 1px rgba(255,255,255,.2);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.8);  
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;  
+    height: 36px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+button:disabled{
+  background-color: #465e70;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 10px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(150, 176, 181);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ffffff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #5d6dff;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .pintado{
+      border:1px solid black; 
+      border-width: 5px 5px; 
+  }
+.pintado:after {
+    
+    /*
+    background-color: #f6ff52;
+    width:82px;
+    height: 32px;
+    border-width: 15px 5px;
+    */ 
+    position:absolute;
+    margin:0;
+    padding:0;
+    border:1px solid transparent;
+    border-width: 5px 5px;
+    width:112px;/*92,32*/
+    height: 42px;
+    
+    top:0;
+    left:0;
+    content:"";
+    /*    
+
+    */
+}
+.colored-equa-8{
+    background-color: #fc3d3d;
+}
+.colored-equa-7{
+    background-color: #ff9041;
+}
+.colored-equa-6{
+    background-color: #f7a955;
+}
+.colored-equa-5{
+    background-color: #ffe11d;
+}
+.colored-equa-4{
+    background-color: #dcff3e;
+}
+.colored-equa-3{
+    background-color: #ddf87a;
+}
+.colored-equa-2{
+    background-color: #67ff5a;
+}
+.colored-equa-1{    
+    background-color: #1aea1a;
+}
+/*
+   .bailarin:after{
+    
+    position: absolute;
+    font-size: 36px;
+    left: 24px;
+    top: -10px;
+    
+    display: inline-block;
+    animation-name: baila;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+    
+  }  
+ 
+  .burger.bailarin:after{
+    content:"🍔";
+  }
+  .fire.bailarin:after{
+    content:"🔥"
+  }
+.feliz.bailarin:after{
+    content:"🤗"
+  }
+  */
+  .bailarin{
+    display: inline-block;
+    animation-name: baila;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode:both;
+    animation-direction: alternate;
+  }
+
+  @keyframes baila {
+    0%{
+      transform: rotate(30deg);
+    }
+    50%{
+      transform: rotate(0deg);
+    }
+    100%{     
+      transform: rotate(-30deg);     
+    }
+  } 
